@@ -26,6 +26,12 @@ func TestHello(t *testing.T) {
 		want := "Salut, Tresor"
 		assertEqual(t, got, want)
 	})
+
+	t.Run("saying hello to people in Kirundi", func(t *testing.T) {
+		got := Hello("Tresor", "Kirundi")
+		want := "Yambu, Tresor"
+		assertEqual(t, got, want)
+	})
 }
 
 func assertEqual(t testing.TB, got, want string) {
