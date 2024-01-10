@@ -16,19 +16,19 @@ func TestHello(t *testing.T) {
 	})
 
 	t.Run("saying hello to people in Spanish", func(t *testing.T) {
-		got := Hello("Tresor", "Spanish")
+		got := Hello("Tresor", "es")
 		want := "Hola, Tresor"
 		assertEqual(t, got, want)
 	})
 
 	t.Run("saying hello to people in French", func(t *testing.T) {
-		got := Hello("Tresor", "French")
+		got := Hello("Tresor", "fr")
 		want := "Salut, Tresor"
 		assertEqual(t, got, want)
 	})
 
 	t.Run("saying hello to people in Kirundi", func(t *testing.T) {
-		got := Hello("Tresor", "Kirundi")
+		got := Hello("Tresor", "rn")
 		want := "Yambu, Tresor"
 		assertEqual(t, got, want)
 	})

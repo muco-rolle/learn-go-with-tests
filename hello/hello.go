@@ -5,9 +5,9 @@ import (
 )
 
 const (
-	spanish = "Spanish"
-	french  = "French"
-	kirundi = "Kirundi"
+	spanish = "es"
+	french  = "fr"
+	kirundi = "rn"
 
 	englishHelloPrefix = "Hello, "
 	spanishHelloPrefix = "Hola, "
